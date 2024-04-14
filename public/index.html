@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Forwarder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Discord Bot is running!</h1>
+        <form id="messageForm">
+            <label for="guildId">Guild ID:</label>
+            <input type="text" id="guildId" name="guildId" required>
+
+            <label for="channelId">Channel ID:</label>
+            <input type="text" id="channelId" name="channelId" required>
+
+            <label for="content">Message Content:</label>
+            <textarea id="content" name="content" rows="4" required></textarea>
+
+            <input type="button" value="Send Message" onclick="sendMessage()">
+        </form>
+
+        <div id="response"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
